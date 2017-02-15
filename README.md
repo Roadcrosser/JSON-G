@@ -65,3 +65,7 @@ The rest of this repo contains specifications for how to read/write JSON-G, some
 ## JSON-G sounds like J-song ##
 
 I'd have called it `JSONP` if it hadn't already been [taken](https://en.wikipedia.org/wiki/JSONP), so `JSON-G` was the next best thing. I put a dash in between the `JSON` and `G` so people wouldn't pronounce it as J-song and hopefully avert another file-extension pronounciation war.
+
+## Credits ##
+
+Credit to [Gorialis](https://github.com/Gorialis) for helping me test the spec and my converters.
