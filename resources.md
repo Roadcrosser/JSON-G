@@ -12,3 +12,7 @@ Several third parties have created JSON-G converters in various languages. Here 
 ### PHP ###
 
  - [PHP JSON-G](https://git.gocode.it/RaidAndFade/PHP_json-g)
+
+### Dart- I mean JS ###
+
+ - [node-json-g](https://github.com/AtlasTheBot/node-json-g)
