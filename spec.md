@@ -30,7 +30,7 @@ The base object has several members. They are:
 
  - **`layers`** - *array* (Required)
 
-    - Contains an array of layer objects.
+    - Contains an array of [`layer`](#layers) objects.
 
 ## Layers ##
 
@@ -38,13 +38,13 @@ Layers are objects which contain the following members:
 
 - **`default_color`** - *object*
 
-    - Contains a color object.
+    - Contains a [`color`](#color) object.
     - Aliases to `default_colour`.
     - If this field is not present, the default color defaults to `RGBA(0, 0, 0, 255)`.
 
 - **`pixels`** - *array*
 
-    - Contains an array of pixel objects.
+    - Contains an array of [`pixel`](#pixels) objects.
 
 A layer will overlap the layer preceding it.
 
@@ -67,7 +67,7 @@ Pixels are objects which contain the following members:
 
 - **`color`** - *object* (Required)
 
-    - Contains a color object.
+    - Contains a [`color`](#color) object.
     - Aliases to `colour`.
 
 If two pixels share the same position, the pixel that comes after will overwrite the first, and so on.
