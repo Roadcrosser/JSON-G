@@ -18,3 +18,6 @@ Several third parties have created JSON-G converters in various languages. Here 
  - [node-json-g](https://github.com/AtlasTheBot/node-json-g)
  - [jsng](https://github.com/abalabahaha/jsng)
  - [jsongjs](https://github.com/FelixRilling/jsongjs)
+
+### Ruby ###
+ - [Jsong](https://github.com/fwrs/jsong)
