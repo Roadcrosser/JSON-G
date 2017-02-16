@@ -16,3 +16,4 @@ Several third parties have created JSON-G converters in various languages. Here 
 ### Dart- I mean JS ###
 
  - [node-json-g](https://github.com/AtlasTheBot/node-json-g)
+ - [jsng](https://github.com/abalabahaha/jsng)
