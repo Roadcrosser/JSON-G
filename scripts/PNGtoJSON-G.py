@@ -2,6 +2,8 @@ source = "demo.png" # Specify the proper filepath for this one
 
 saveto = "demo.jsng"
 
+indent = 4 # set to None to minimize filesize
+
 from PIL import Image
 import json
 
@@ -66,6 +68,6 @@ assembly = {
 }
 
 with open(saveto, 'w') as out:
-    json.dump(assembly, out, indent = 4)
+    json.dump(assembly, out, indent = indent)
 
 print("Converted {} to {}!".format(source, saveto))
