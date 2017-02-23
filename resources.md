@@ -24,4 +24,7 @@ Several third parties have created JSON-G converters in various languages. Here 
  - [JSON-GeRBil](https://github.com/LikeLakers2/JSON-GeRBil)
 
 ### .NET (C#) ###
-- [JsonGSharp](https://github.com/foxbot/JsonGSharp)
+ - [JsonGSharp](https://github.com/foxbot/JsonGSharp)
+
+### Lua ###
+ - [luajsong](https://github.com/FiniteReality/luajsong)
