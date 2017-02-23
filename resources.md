@@ -22,3 +22,6 @@ Several third parties have created JSON-G converters in various languages. Here 
 ### Ruby ###
  - [Jsong](https://github.com/fwrs/jsong)
  - [JSON-GeRBil](https://github.com/LikeLakers2/JSON-GeRBil)
+
+### .NET (C#) ###
+- [JsonGSharp](https://github.com/foxbot/JsonGSharp)
