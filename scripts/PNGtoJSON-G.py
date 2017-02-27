@@ -2,6 +2,7 @@ import argparse
 from datetime import datetime
 from PIL import Image
 import json
+import os
 
 def indentarg(s):
     try:            
@@ -116,9 +117,15 @@ with open(saveto, 'w') as out:
 
 saved = datetime.utcnow()
 
-print("Converted {} to {}!\n\nTime taken to convert: {}\nTime taken to save: {}\nTotal time taken: {}".format(
+in_size = os.stat(source).st_size
+out_size = os.stat(saveto).st_size
+
+print("Converted {} to {}!\n\nTime taken to convert: {}\nTime taken to save: {}\nTotal time taken: {}\n\nInput size: {} KB\nOutput size: {} KB\nMagnitude: {}".format(
     source,
     saveto,
     converted - start,
     saved - converted,
-    saved - start))
+    saved - start,
+    in_size/1000,
+    out_size/1000,
+    out_size/in_size))
