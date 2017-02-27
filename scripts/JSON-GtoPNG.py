@@ -1,11 +1,42 @@
-source = "demo.jsng" # Specify the proper filepath for this one
-
-saveto = "demo.png"
-
+import argparse
+from datetime import datetime
 from PIL import Image
 import json
 
-version = "1.0"
+parser = argparse.ArgumentParser(description="Converts a JSON-G image to PNG.")
+
+parser.add_argument("input", help="Filepath for input. e.g.: image.jsng")
+parser.add_argument("output",
+                    nargs="?",
+                    default=None,
+                    help="Filepath to output the JSON-G. "
+                    "Defaults to filename of input. e.g.: image.png")
+
+args = parser.parse_args()
+
+source = args.input
+
+saveto = args.output
+
+if not saveto:
+    saveto = source
+    index = source.rfind(".")
+    if index >= 0:
+        saveto = source[:index]
+    saveto += ".png"
+
+version = "1.0" # This decoder should only decode v1.0 to prevent future versions from potentially causing a corrupted output.
+
+def from_color_dict(color):
+    return (color["red"], color["green"], color["blue"], color["alpha"] if transparency else 255)
+
+def resolve_color(dct):
+    for c in ["default_color", "default_colour", "color", "colour"]:
+        if c in dct:
+            return dct[c]
+    return {"red" : 0, "green" : 0, "blue" : 0, "alpha" : 255}
+
+start = datetime.utcnow() # Collect time for benchmarks or whatever.
 
 with open(source) as inp:
     jsng = json.load(inp)
@@ -18,15 +49,6 @@ transparency = jsng["transparency"]
 
 size = (jsng["size"]["width"], jsng["size"]["height"])
 
-def from_color_dict(color):
-    return (color["red"], color["green"], color["blue"], color["alpha"] if transparency else 255)
-
-def resolve_color(dct):
-    for c in ["default_color", "default_colour", "color", "colour"]:
-        if c in dct:
-            return dct[c]
-    return {"red" : 0, "green" : 0, "blue" : 0, "alpha" : 255}
-
 base = Image.new("RGBA", size, (0, 0, 0, 0))
 
 for l in jsng["layers"]:
@@ -35,8 +57,17 @@ for l in jsng["layers"]:
         layer.putpixel((p["position"]["x"], p["position"]["y"]), from_color_dict(resolve_color(p)))
     base = Image.alpha_composite(base, layer)
 
+converted = datetime.utcnow()
+
 base.save(saveto)
 
 base.close()
 
-print("Converted {} to {}!".format(source, saveto))
+saved = datetime.utcnow()
+
+print("Converted {} to {}!\n\nTime taken to convert: {}\nTime taken to save: {}\nTotal time taken: {}".format(
+    source,
+    saveto,
+    converted - start,
+    saved - converted,
+    saved - start))
