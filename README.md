@@ -74,12 +74,12 @@ Do whatever you want tbh.
 
 > I am absolutely sorry for doing this
 >
-> —<cite>HpslUU</cite>
+> — *HpslUU*
 
 ​
 > Sounds like a waste
 >
-> —<cite>Jake Heinz, some guy who works at Discord.</cite>
+> — *Jake Heinz, some guy who works at Discord.*
 
 ## Credits ##
 
