@@ -70,6 +70,16 @@ I'd have called it `JSONP` if it hadn't already been [taken](https://en.wikipedi
 
 Do whatever you want tbh.
 
+## What do people have to say about JSON-G? ##
+
+> I am absolutely sorry for doing this
+>
+> —<cite>HpslUU</cite>
+
+> Sounds like a waste
+>
+> —<cite>Jake Heinz, some guy who works at Discord.</cite>
+
 ## Credits ##
 
 Credit to [Gorialis](https://github.com/Gorialis) for helping me test the spec and my converters.
