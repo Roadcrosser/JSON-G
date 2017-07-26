@@ -26,6 +26,7 @@ Several third parties have created JSON-G converters in various languages. Here 
 
 ### .NET (C#) ###
  - [JsonGSharp](https://github.com/foxbot/JsonGSharp)
+ - [Json-G.NET](https://github.com/NaamloosDT/Json-G.NET)
 
 ### Lua ###
  - [luajsong](https://github.com/FiniteReality/luajsong)
