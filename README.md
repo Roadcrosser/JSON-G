@@ -76,12 +76,17 @@ Do whatever you want tbh.
 
 > I am absolutely sorry for doing this
 >
-> — *HpslUU*
+> — *HpslUU, inventor of JSON-G*
 
 ​
 > Sounds like a waste
 >
 > — *Jake Heinz, some guy who works at Discord.*
+
+​
+> marvelous adding jsong brb
+>
+> — *Jaex, creator and lead developer of [ShareX](https://getsharex.com/)*
 
 ## Credits ##
 
