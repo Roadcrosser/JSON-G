@@ -62,6 +62,8 @@ This results in the following image, when converted to PNG:
 
 The rest of this repo contains specifications for how to read/write JSON-G, some sample JSON-G files as well as a PNG ⇌ JSON-G converter written in Python as a proof of concept.
 
+There is also a [resources](resources.md) page showcasing JSON-G libraries created by others in various languages. If you make one, feel free to PR a link to it on that page!
+
 ## JSON-G sounds like J-song ##
 
 I'd have called it `JSONP` if it hadn't already been [taken](https://en.wikipedia.org/wiki/JSONP), so `JSON-G` was the next best thing. I put a dash in between the `JSON` and `G` so people wouldn't pronounce it as J-song and hopefully avert another file-extension pronunciation war.
