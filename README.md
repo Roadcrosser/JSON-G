@@ -9,9 +9,9 @@ JSON-G (JSON-Graphics) is an extremely inefficient way to store raster image dat
 ## Here's a taste of what JSON-G can do! ##
 ```json
 {
-    "version" : "1.0",
-    "comment" : "demo.jsng - a demo for JSON-G",
-    "transparency" : true,
+    "version": "1.0",
+    "comment": "demo.jsng - a demo for JSON-G",
+    "transparency": true,
     "size":
         {
             "width": 5,
@@ -22,27 +22,27 @@ JSON-G (JSON-Graphics) is an extremely inefficient way to store raster image dat
             {
                 "default_color" :
                     {
-                        "red" : 0,
-                        "green" : 0,
-                        "blue" : 0,
-                        "alpha" : 255
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0,
+                        "alpha": 255
                     },
                 "pixels" :
                     [
                         {
                             "position" :
                                 {
-                                    "x" : 2,
-                                    "y" : 2
+                                    "x": 2,
+                                    "y": 2
                                 },
                             "color" :
                                 {
-                                    "red" : 255,
-                                    "green" : 255,
-                                    "blue" : 255,
-                                    "alpha" : 255
+                                    "red": 255,
+                                    "green": 255,
+                                    "blue": 255,
+                                    "alpha": 255
                                 },
-                            "comment" : "A nice white pixel."
+                            "comment": "A nice white pixel."
                         }
                     ]
             }
