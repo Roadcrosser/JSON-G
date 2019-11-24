@@ -95,3 +95,7 @@ Do whatever you want tbh.
 Credit to [Gorialis](https://github.com/Gorialis) for helping me test the spec and my converters.
 
 Also [HpslUU](https://github.com/HpslUU) who [gave me the whole idea](https://raw.githubusercontent.com/Roadcrosser/JSON-G/master/jsong-origin.png) for doing this anyway (and creating a GitHub account just so I could type this line).
+
+---
+
+Also check out [Bogodownload](https://github.com/Roadcrosser/bogodownload)!
