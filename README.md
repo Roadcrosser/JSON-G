@@ -1,5 +1,7 @@
 # JSON-G #
 
+![json-g banner](banner.png)
+
 JSON-G (JSON-Graphics) is an extremely inefficient way to store raster image data, with transparency and layered support!
 
 
